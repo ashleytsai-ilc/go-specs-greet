@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	handler := http.HandlerFunc(httpserver.Hanler)
-	http.ListenAndServe(":8080", handler)
+	http.ListenAndServe(":8080", httpserver.Handler())
 }
